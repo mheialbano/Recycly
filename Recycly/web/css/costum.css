@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+body{
+	background-image: url("../img/bg.jpg");	
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar > a {
+	color : #fff;
+}
+.navbar > a : hover {
+	color : limegreen;
+}
+.nav-item > a {
+	color : #fff;
+}
+.nav-item > a : hover {
+	color : limegreen;
+}
+.container{
+	padding-top:20px;
+}
+#login{
+	padding-top : 20%;
+}
+#recycly-card{
+	padding-bottom : 20px;
+}

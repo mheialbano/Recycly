@@ -1,0 +1,20 @@
+<div class="row" id="recyclyst">
+<div>
+
+<script type="text/javascript">
+  			$.post('getrecyclys',
+  	        	{}
+  	        ,function(result) {
+  	        	for(i=0;i<result.length;i++){
+  	        		$('#recyclyst').append(
+  	  	        			"<div class='col-4'>"+
+  	  	        			"<div class='card' style='margin-bottom:20px;'>"+
+  	  	        			"<img class='card-img-top' src='img/recycly/"+result[i]['picture']+"' alt='Card image cap'>"+
+  	  	        			"<div class='card-body'>"+
+  	  	        			"<h5 class='card-title'>"+result[i]['name']+"</h5>"+
+  	  	        			"<a href='#' class='btn btn-primary btn-block'>View Recycly</a>"
+  	  	        	);
+  	        	}
+  			}
+  	        ,'json');
+</script>
